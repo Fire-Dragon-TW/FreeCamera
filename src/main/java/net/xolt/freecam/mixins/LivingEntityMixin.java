@@ -13,7 +13,7 @@ public class LivingEntityMixin {
 
     @Inject(method = "getMovementSpeed(F)F", at = @At("HEAD"), cancellable = true)
     private void onGetMovementSpeed(CallbackInfoReturnable<Float> cir) {
-        if (Freecam.isEnabled() && ModConfig.INSTANCE.flightMode.equals(ModConfig.FlightMode.CREATIVE) && this.equals(Freecam.getFreeCamera())) {
+        if (Freecam.isEnabled() && this.equals(Freecam.getFreeCamera())) {
             cir.setReturnValue((float) (ModConfig.INSTANCE.horizontalSpeed / 10) * (Freecam.getFreeCamera().isSprinting() ? 2 : 1));
         }
     }

@@ -7,15 +7,12 @@
     "CameraMixin",
     "ClientConnectionMixin",
     "ClientPlayerEntityMixin",
-    "ClientPlayerInteractionManagerMixin",
     "ClientPlayNetworkHandlerMixin",
     "EntityMixin",
-    "EntityRendererMixin",
     "GameOptionsMixin",
     "InGameHudMixin",
     "LivingEntityMixin",
-    "MinecraftClientMixin",
-    "PlayerEntityMixin"
+    "MinecraftClientMixin"
   ],
   "injectors": {
     "defaultRequire": 1

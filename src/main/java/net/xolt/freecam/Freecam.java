@@ -45,7 +45,7 @@ public class Freecam implements ClientModInitializer {
 
     private static void onEnable() {
         MC.chunkCullingEnabled = false;
-        MC.gameRenderer.setRenderHand(ModConfig.INSTANCE.showHand);
+        MC.gameRenderer.setRenderHand(false);
         freeCamera = new FreeCamera();
         freeCamera.spawn();
         MC.setCameraEntity(freeCamera);
