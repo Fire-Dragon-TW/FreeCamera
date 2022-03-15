@@ -4,13 +4,17 @@
   "version": "${version}",
   "name": "FreeCamera",
   "description": "A mod that implements free perspective",
-  "authors": ["Fire-Dragon-TW"],
+  "authors": [
+    "Fire-Dragon-TW"
+  ],
   "contact": {},
   "license": "MIT",
   "icon": "assets/freecam/icon.png",
   "environment": "client",
   "entrypoints": {
-    "client": ["net.xolt.freecam.Freecam"],
+    "client": [
+      "net.xolt.freecam.Freecam"
+    ],
     "modmenu": [
       "net.xolt.freecam.config.ModMenuIntegration"
     ]

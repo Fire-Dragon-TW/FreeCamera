@@ -22,18 +22,6 @@ public class Freecam implements ClientModInitializer {
 
     private static FreeCamera freeCamera;
 
-    @Override
-    public void onInitializeClient() {
-        ModConfig.init();
-        keyBinding = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-                "key.freecam.toggle", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_X, "category.freecam.freecam"));
-        ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            while (keyBinding.wasPressed()) {
-                toggle();
-            }
-        });
-    }
-
     public static void toggle() {
         if (enabled) {
             onDisable();
@@ -78,5 +66,17 @@ public class Freecam implements ClientModInitializer {
 
     public static boolean isEnabled() {
         return enabled;
+    }
+
+    @Override
+    public void onInitializeClient() {
+        ModConfig.init();
+        keyBinding = KeyBindingHelper.registerKeyBinding(new KeyBinding(
+                "key.freecam.toggle", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_X, "category.freecam.freecam"));
+        ClientTickEvents.END_CLIENT_TICK.register(client -> {
+            while (keyBinding.wasPressed()) {
+                toggle();
+            }
+        });
     }
 }
