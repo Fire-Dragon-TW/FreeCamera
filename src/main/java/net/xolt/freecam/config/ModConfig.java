@@ -15,15 +15,9 @@ public class ModConfig implements ConfigData {
     @Comment("FreeCamera 的水平速度")
     public double horizontalSpeed = 1.0;
     @Comment("FreeCamera 的垂直速度")
-    public double verticalSpeed = 0.8;
-    @Comment("是否受到傷害會禁用 FreeCamera")
+    public double verticalSpeed = 1.0;
+    @Comment("受到傷害時是否自動退出 FreeCamera 模式")
     public boolean disableOnDamage = true;
-    @Comment("操作欄通知")
-    public boolean notify = true;
-    @Comment("啟用 FreeCamera 時顯示的消息")
-    public String enableMessage = "FreeCamera 已啟用";
-    @Comment("禁用 FreeCamera 時顯示的消息")
-    public String disableMessage = "FreeCamera 已關閉";
 
     public static void init() {
         AutoConfig.register(ModConfig.class, JanksonConfigSerializer::new);

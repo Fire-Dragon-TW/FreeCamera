@@ -42,9 +42,7 @@ public class Freecam implements ClientModInitializer {
             MC.options.setPerspective(Perspective.FIRST_PERSON);
         }
 
-        if (ModConfig.INSTANCE.notify) {
-            MC.player.sendMessage(new LiteralText(ModConfig.INSTANCE.enableMessage), true);
-        }
+        MC.player.sendMessage(new LiteralText("FreeCamera 已啟用"), true);
     }
 
     private static void onDisable() {
@@ -55,9 +53,7 @@ public class Freecam implements ClientModInitializer {
         freeCamera.despawn();
         freeCamera = null;
 
-        if (ModConfig.INSTANCE.notify) {
-            MC.player.sendMessage(new LiteralText(ModConfig.INSTANCE.disableMessage), true);
-        }
+        MC.player.sendMessage(new LiteralText("FreeCamera 已關閉"), true);
     }
 
     public static FreeCamera getFreeCamera() {
