@@ -1,15 +1,12 @@
-# Freecam
+# FreeCamera
 
-This mod allows you to view your world from a spectator-like perspective. While it is enabled, you can fly around and
-travel through blocks within your render distance. Disabling it will restore you to your original position. This can be
-useful for quickly inspecting builds and exploring your world.
+這個模組允許你使用 `自由視角` 看世界，開啟後可以四處飛行並查看 `渲染距離內的方塊` 關閉後會回到開啟時的位置
 
-The bind defaults to X, and can be changed in the vanilla options menu. Speed and various cosmetic options are
-configurable through the Mod Menu config page.
+- 默認切換按鍵為 X，可以在選項菜單中進行更改
+- 運動速度可以通過 Mod Menu 配置頁面進行配置
+- 此模組適用於多人遊戲，但在某些服務器上可能會被視為作弊，因此使用它需要自行承擔風險
 
-This mod works in multiplayer, but may be considered cheating on some servers, so use it at your own risk.
-
-### Requirements
+### 依賴
 
 - [Fabric API](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
-- [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu) (Optional for easier configuration)
+- [Mod Menu](https://www.curseforge.com/minecraft/mc-mods/modmenu)
