@@ -19,43 +19,43 @@ public class ModConfig implements ConfigData {
         INSTANCE = AutoConfig.getConfigHolder(ModConfig.class).getConfig();
     }
 
-    @Comment("The type of flight that is used by freecam.")
+    @Comment("FreeCamera 使用的飛行類型")
     @ConfigEntry.Gui.EnumHandler(option = ConfigEntry.Gui.EnumHandler.EnumDisplayOption.BUTTON)
     public FlightMode flightMode = FlightMode.DEFAULT;
 
-    @Comment("The horizontal speed of freecam.")
+    @Comment("FreeCamera 的水平速度")
     public double horizontalSpeed = 1.0;
 
-    @Comment("The vertical speed of freecam.")
+    @Comment("FreeCamera 的垂直速度")
     public double verticalSpeed = 0.8;
 
-    @Comment("Toggles whether your player is rendered in your original position while freecam is enabled.")
+    @Comment("是否在啟用 FreeCamera 時呈現在原始位置")
     public boolean showPlayer = true;
 
-    @Comment("Toggles whether your hand is shown while freecam is enabled.")
+    @Comment("是否在啟用 FreeCamera 時顯示您的手")
     public boolean showHand = false;
 
-    @Comment("Toggles whether taking damage disables freecam.")
+    @Comment("是否受到傷害會禁用 FreeCamera")
     public boolean disableOnDamage = true;
 
-    @Comment("Toggles whether you can break blocks while freecam is enabled.")
+    @Comment("是否可以在啟用 FreeCamera 時破壞方塊")
     public boolean allowBlockBreak = true;
 
-    @Comment("Toggles whether you can interact with entities while freecam is enabled.")
+    @Comment("是否可以在啟用 FreeCamera 時與實體交互")
     public boolean allowEntityInteract = true;
 
-    @Comment("Toggles action bar notifications.")
+    @Comment("操作欄通知")
     public boolean notify = true;
 
-    @Comment("The message that is shown when freecam is enabled.")
+    @Comment("啟用 FreeCamera 時顯示的消息")
     public String enableMessage = "Freecam has been enabled.";
 
-    @Comment("The message that is shown when freecam is disabled.")
+    @Comment("禁用 FreeCamera 時顯示的消息")
     public String disableMessage = "Freecam has been disabled.";
 
     public enum FlightMode implements SelectionListEntry.Translatable {
-        CREATIVE("Creative"),
-        DEFAULT("Default");
+        CREATIVE("創造"),
+        DEFAULT("默認");
 
         private final String name;
 

@@ -1,0 +1,16 @@
+{
+  "key.freecam.toggle": "Toggle FreeCamera",
+  "category.freecam.freecam": "FreeCamera",
+  "text.autoconfig.freecam.title": "參數設置",
+  "text.autoconfig.freecam.option.flightMode": "飛行模式",
+  "text.autoconfig.freecam.option.horizontalSpeed": "水平速度",
+  "text.autoconfig.freecam.option.verticalSpeed": "垂直速度",
+  "text.autoconfig.freecam.option.showPlayer": "顯示玩家",
+  "text.autoconfig.freecam.option.showHand": "顯示手",
+  "text.autoconfig.freecam.option.disableOnDamage": "關閉傷害",
+  "text.autoconfig.freecam.option.allowBlockBreak": "允許方塊破壞",
+  "text.autoconfig.freecam.option.allowEntityInteract": "允許實體交互",
+  "text.autoconfig.freecam.option.notify": "通知",
+  "text.autoconfig.freecam.option.enableMessage": "啟動訊息",
+  "text.autoconfig.freecam.option.disableMessage": "關閉訊息"
+}
